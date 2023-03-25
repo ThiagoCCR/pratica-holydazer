@@ -6,6 +6,7 @@ public class App {
         System.out.print("Insira uma data- ");
         String date = scan.nextLine();
         HolydaysChecker check = new HolydaysChecker();
+        check.getHolidaysList();
         check.searchHoliday(date);
         scan.close();
 

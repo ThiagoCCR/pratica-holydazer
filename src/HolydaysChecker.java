@@ -19,13 +19,12 @@ public class HolydaysChecker {
     }
 
     public void getHolidaysList() {
-        System.out.println(HolidaysList);
-        // holidays.forEach((key, value) -> System.out.println(key+": "+value));
+        HolidaysList.forEach((key, value) -> System.out.println(key + ": " + value));
     }
 
-    public void searchHoliday(String date){
+    public void searchHoliday(String date) {
         String holiday = HolidaysList.get(date);
-        if(holiday != null){
+        if (holiday != null) {
             System.out.println("O feriado para o dia " + date + " é: " + holiday);
             return;
         }
